@@ -1,0 +1,1237 @@
+<div data-type="slot" data-key="pj46cg3fota" data-label="AMPScript"></div>
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no"> <!-- Tell iOS not to automatically link certain text strings. -->
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
+    <title>%%=v(@title)=%%</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+
+    <!--[if mso]>
+    <style type="text/css">
+    body, table, td, a, h1, h2, p, b, span {font-family: Arial, Helvetica, sans-serif !important;mso-hyphenate:none;}
+    b {font-family: Arial, Helvetica, sans-serif; font-weight: 700 !important;}
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <link rel="stylesheet" href="https://use.typekit.net/uhk6msu.css">
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+    <!-- Makes bullets consitent in IE -->
+
+    <!--[if gte mso 9]>
+      <style>
+        li {
+        text-indent: -1em; /* Normalise space between bullets and text */
+        }
+
+        ul {
+        margin-top:0px !important;
+        margin-left:15px !important;
+        padding: 0 !important;
+        list-style-position: inside !important;
+        }
+
+        sub {
+        line-height: 100%;
+        font-size: 100%;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- CSS Reset : BEGIN -->
+    <style type="text/css">
+        /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+        :root {
+            color-scheme: light;
+            supported-color-schemes: light;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .pd-valign>* {
+            vertical-align: middle !important;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        /* div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        } */
+        /* What it does: forces Samsung Android mail clients to use the entire viewport */
+        #MessageViewBody,
+        #MessageWebViewDiv {
+            width: 100% !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        .ii a[href] {
+            color: inherit !important;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* .hide-mobile {
+          display: inline-block !important;
+          max-height: none !important;
+        } */
+
+        .hide-desktop {
+            display: none !important;
+            max-height: 0 !important;
+        }
+
+        b,
+        strong {
+            font-weight: 900 !important;
+        }
+
+        sup {
+            font-size: 10px;
+            line-height: 0;
+            vertical-align: 4px;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+        }
+    </style>
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style type="text/css">
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #FFA500 !important;
+            border-color: #FFA500 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 680px) {
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column-alt,
+            .stack-column-6 {
+                display: inline-block !important;
+                width: auto !important;
+                direction: ltr !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: left !important;
+            }
+
+            .stack-column-alt,
+            .stack-column-6 {
+                text-align: center !important;
+            }
+
+            .pd-mobile-shift {
+                padding-top: 0 !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            .left-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                /* margin-left: auto !important; */
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            .logo-center-on-narrow {
+                float: left !important;
+                margin-left: 0 !important;
+                margin-right: 10px !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            .hide-mobile {
+                display: none !important;
+                width: 0 !important;
+                height: 0 !important;
+                max-width: 0 !important;
+                max-height: 0 !important;
+                overflow: hidden !important;
+            }
+
+            .hide-desktop {
+                display: inline-block !important;
+                max-height: none !important;
+            }
+
+            .pd-center-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important
+            }
+
+            .pd-center-padding-small {
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            .pd-center-padding-footer {
+                padding-left: 10px !important;
+                padding-right: 10px !important
+            }
+
+            .pd-center-padding-footer-alt {
+                padding-left: 5px !important;
+                padding-right: 5px !important
+            }
+
+            .pd-disclaimer p {
+                font-size: 15px !important;
+                line-height: 21px !important;
+            }
+
+            img.fluid {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+        }
+    </style>
+
+    <style type="text/css">
+        /* Media Queries */
+        @media screen and (max-width: 680px) {
+
+            .pl-0 {
+                padding-left: 0 !important
+            }
+
+            .pl-1 {
+                padding-left: 10px !important
+            }
+
+            .pl-2 {
+                padding-left: 20px !important
+            }
+
+            .pl-3 {
+                padding-left: 30px !important
+            }
+
+            .pl-4 {
+                padding-left: 40px !important
+            }
+
+            .pl-5 {
+                padding-left: 50px !important
+            }
+
+            .pt-0 {
+                padding-top: 0 !important
+            }
+
+            .pt-1 {
+                padding-top: 10px !important
+            }
+
+            .pt-2 {
+                padding-top: 20px !important
+            }
+
+            .pt-3 {
+                padding-top: 30px !important
+            }
+
+            .pt-4 {
+                padding-top: 40px !important
+            }
+
+            .pt-5 {
+                padding-top: 50px !important
+            }
+
+            .pr-0 {
+                padding-right: 0 !important
+            }
+
+            .pr-1 {
+                padding-right: 10px !important
+            }
+
+            .pr-2 {
+                padding-right: 20px !important
+            }
+
+            .pr-3 {
+                padding-right: 30px !important
+            }
+
+            .pr-4 {
+                padding-right: 40px !important
+            }
+
+            .pr-5 {
+                padding-right: 50px !important
+            }
+
+            .pb-0 {
+                padding-bottom: 0 !important
+            }
+
+            .pb-1 {
+                padding-bottom: 10px !important
+            }
+
+            .pb-2 {
+                padding-bottom: 20px !important
+            }
+
+            .pb-3 {
+                padding-bottom: 30px !important
+            }
+
+            .pb-4 {
+                padding-bottom: 40px !important
+            }
+
+            .pb-5 {
+                padding-bottom: 50px !important
+            }
+
+            .px-0 {
+                padding-left: 0 !important;
+                padding-right: 0 !important
+            }
+
+            .px-1 {
+                padding-left: 10px !important;
+                padding-right: 10px !important
+            }
+
+            .px-2 {
+                padding-left: 20px !important;
+                padding-right: 20px !important
+            }
+
+            .px-3 {
+                padding-left: 30px !important;
+                padding-right: 30px !important
+            }
+
+            .px-4 {
+                padding-left: 40px !important;
+                padding-right: 40px !important
+            }
+
+            .px-5 {
+                padding-left: 50px !important;
+                padding-right: 50px !important
+            }
+
+            .py-0 {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important
+            }
+
+            .py-1 {
+                padding-top: 10px !important;
+                padding-bottom: 10px !important
+            }
+
+            .py-2 {
+                padding-top: 20px !important;
+                padding-bottom: 20px !important
+            }
+
+            .py-3 {
+                padding-top: 30px !important;
+                padding-bottom: 30px !important
+            }
+
+            .py-4 {
+                padding-top: 40px !important;
+                padding-bottom: 40px !important
+            }
+
+            .py-5 {
+                padding-top: 50px !important;
+                padding-bottom: 50px !important
+            }
+
+            .h-sm {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+    <div data-type="slot" data-key="v10jbjrafs" data-label="Additional styles"></div>
+
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+ The email background color (#EAEAEA) is defined in three places:
+ 1. body tag: for most email clients
+ 2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+ 3. mso conditional: For Windows 10 Mail
+-->
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #EAEAEA;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #EAEAEA;">
+    <tr>
+    <td>
+    <![endif]-->
+
+    <!-- Visually Hidden Preheader Text : BEGIN -->
+    <div style="display:none;max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+        %%=v(@pre_header)=%%
+    </div>
+    <!-- Visually Hidden Preheader Text : END -->
+
+    <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+    <!-- Preview Text Spacing Hack : BEGIN -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
+        &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <!-- Preview Text Spacing Hack : END -->
+
+    <!--
+            Set the email width. Defined in two places:
+            1. max-width for all clients except Desktop Windows Outlook, allowing the email to squish on narrow but never go wider than 680px.
+            2. MSO tags for Desktop Windows Outlook enforce a 680px width.
+            Note: The Fluid and Responsive templates have a different width (600px). The hybrid grid is more "fragile", and I've found that 680px is a good width. Change with caution.
+        -->
+    <div style="width:100%;max-width: 680px; margin: 0 auto;">
+        <!--[if mso]>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="680">
+            <tr>
+            <td>
+            <![endif]-->
+        <table role="presentation" border="0" width="100%" cellpadding="0" cellspacing="0" style="width:100%;">
+            <tr>
+                <td style="padding:0;">
+                    <!-- Start Content -->
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;max-width:680px;margin:auto;">
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:16px;padding-bottom:16px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;"> <!--[if mso]> <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"> <tr> <td valign="top" align="left"> <![endif]-->
+                                <table align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100" style="width:100px;float:left;">
+                                    <tr>
+                                        <td align="left" style="margin:0;text-align:left;mso-line-height-alt:100%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/b2277ec4-078d-4466-ba08-5862e4eb24cc.png" alt="Meridian logo" width="100" height="22" border="0" style="width: 100px; max-width: 100px; height: auto; background: #ffffff; margin: 0; display:block;"> </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> <td valign="top" align="right"> <![endif]-->
+                                <table align="right" role="presentation" border="0" cellpadding="0" cellspacing="0" width="148" style="width:148px;float:right;background-color: #ffffff;">
+                                    <tr>
+                                        <td valign="middle" align="right" style="margin:0;text-align:right;mso-line-height-alt:100%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 18px; line-height: 21px; font-weight: 900; color: #414042;">
+                                            <p style="margin:0px;margin-top:2px;mso-line-height-alt:100%;mso-line-height-rule:exactly;text-align: right;"> <b style="font-weight:900;">May 2024</b> </p>
+                                        </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> </tr> </table> <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 10px; line-height: 20px; color: #414042;mso-line-height-alt:100%;mso-line-height-rule:exactly;background: #ffffff;"> <a href="https://www.ilmeridian.com/providers.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_checkin_header" target="_blank" style="border:none;"> <img class="fluid" src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/60a6f806-851d-4d3f-9d09-eb6415234585.jpg" width="680" alt="Orange header with text that reads Monthly Provider Check-In" border="0" style="width: 100%; max-width: 680px; height: auto; background: #ffffff; margin: auto; display:block;"> </a> </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding pt-0" align="center" style="text-align:left;background-color: #D8D8D8;padding-top:12px;padding-bottom:12px;padding-left:54px;padding-right:24px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 11px; line-height: 13px; font-weight: 700;color:#414042;">
+                                <!--[if mso]>
+                                <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="572">
+                                <tr>
+                                <td valign="top" align="left" style="margin-right:6px;">
+                                <![endif]-->
+                                <p class="pt-1" style="display:inline-block;margin:0;white-space:nowrap;padding-right:12px;letter-spacing: -0.1px;">
+                                    <a href="https://ilmeridian.entrykeyid.com/as/authorization.oauth2?response_type=code&client_id=d8de5c89-1d5d-4c59-b3ed-e99e09b18048&scope=openid%20profile&state=syM75vm6J5e2Rtk3SCbY8H1F2huAwcvnj7b9mXiawGQ%3D&redirect_uri=https://provider.ilmeridian.com/careconnect/login/oauth2/code/pingcloud&code_challenge_method=S256&nonce=cTrnbHPYqQmoDIDnNFXhpoQFufRpTyPiYC94zpY5Z5k&code_challenge=x0s_Eo3f7hjSt3pBQER7Mnp9YkMFmOEY3TjitAFRJ94&app_origin=https://provider.ilmeridian.com/careconnect/login/oauth2/code/pingcloud&brand=ilmeridian&utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_toplinks_portal " target="_blank" style="color:#414042;text-decoration: underline;font-size: 11px; line-height: 13px;"><b style="text-decoration: underline;font-size: 11px; line-height: 13px;font-weight:900;white-space: nowrap;">Provider&nbsp;Portal</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;">
+                                </p>
+                                <!--[if mso]>
+                                </td>
+                                <td valign="top" align="left" style="margin-right:6px;">
+                                <![endif]-->
+                                <p class="pt-1" style="display:inline-block;margin:0;white-space:nowrap;padding-right:12px;letter-spacing: -0.1px;"><a href="https://www.ilmeridian.com/providers/preauth-check.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_toplinks_auth" target="_blank" style="color:#414042;text-decoration: underline;font-size: 11px; line-height: 13px;"><b style="text-decoration: underline;font-size: 11px; line-height: 13px;font-weight:900;white-space: nowrap;">Prior&nbsp;Authorization</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p> <!--[if mso]> </td> <td valign="top" align="left" style="margin-right:6px;"> <![endif]-->
+                                <p class="pt-1" style="display:inline-block;margin:0;white-space:nowrap;padding-right:12px;letter-spacing: -0.1px;"><a href="https://www.ilmeridian.com/providers/provider-news/ProviderNotices.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_toplinks_notices" target="_blank" style="color:#414042;text-decoration: underline;font-size: 11px; line-height: 13px;"><b style="text-decoration: underline;font-size: 11px; line-height: 13px;font-weight:900;white-space: nowrap;">Provider&nbsp;Notices</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p> <!--[if mso]> </td> <td valign="top" align="left" style="margin-right:6px;"> <![endif]-->
+                                <p class="pt-1" style="display:inline-block;margin:0;white-space:nowrap;padding-right:12px;letter-spacing: -0.1px;"><a href="https://www.ilmeridian.com/providers/resources/forms-resources.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_toplinks_manual" target="_blank" style="color:#414042;text-decoration: underline;font-size: 11px; line-height: 13px;"><b style="text-decoration: underline;font-size: 11px; line-height: 13px;font-weight:900;white-space: nowrap;">Provider&nbsp;Manual</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p> <!--[if mso]> </td> <td valign="top" align="left"> <![endif]-->
+                                <p class="pt-1" style="display:inline-block;margin:0;white-space:nowrap;letter-spacing: -0.1px;"><a href="https://www.ilmeridian.com/providers/provider-updates.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_toplinks_updates" target="_blank" style="color:#414042;text-decoration: underline;font-size: 11px; line-height: 13px;"><b style="text-decoration: underline;font-size: 11px; line-height: 13px;font-weight:900;white-space: nowrap;">Practice&nbsp;Updates</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p> <!--[if mso]> </td> </tr> </table> <![endif]-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pl-2 pr-2" style="background-color: #ffffff;padding-top:50px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                    <tr>
+                                        <td class="pl-0 pr-0" align="left" style="padding-right:0px;font-family:museo-sans,Arial,Helvetica,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;">In this issue</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:0px;padding-right:0px;font-family:museo-sans,Arial,Helvetica,sans-serif;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                <tr>
+                                                    <td style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <!--[if mso]>
+                                                        <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                        <tr>
+                                                        <td valign="top" align="center" width="308">
+                                                        <![endif]-->
+                                                        <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:308px;">
+                                                            <tr>
+                                                                <td class="pl-0 pr-0" align="left" style="padding-left:6px;padding-right:16px;font-family:museo-sans,Arial,Helvetica,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section1" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Discussing Black maternal health <br class="hide-mobile">solutions on Capitol&nbsp;Hill</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section2" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Help us move the needle on pregnancy&nbsp;outcomes</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section3" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">New 20&#8205;24 P4P incentive: Capturing Z&nbsp;Codes</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section4" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Champion cancer screening during Women’s Health&nbsp;Month</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;"><a href="#section5" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Long COVID and&nbsp;depression</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if mso]>
+                                                        </td>
+                                                        <td valign="top" align="center" width="248">
+                                                        <![endif]-->
+                                                        <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:248px;">
+                                                            <tr>
+                                                                <td class="pl-0 pr-0 pt-1" align="left" style="padding-right:0px;font-family:museo-sans,Arial,Helvetica,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section6" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Women’s health Quality Improvement&nbsp;webinars</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section7" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">New YouthCare Provider&nbsp;Manual</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section8" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">YouthCare Pharmacy Update</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;"><a href="#section9" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">Fee schedule updates, rate changes, & billing&nbsp;updates</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;"><b style="font-weight:900;">•</b></td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Arial,Helvetica,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;"><a href="#section10" style="color: #414042;text-decoration: underline;"><b style="font-weight:900;">In case you missed&nbsp;it</b></a>&nbsp;&nbsp;<b style="font-weight:900;color:#F36D00;">&gt;</b></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!--[if mso]>
+                                                        </td>
+                                                        </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:24px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                <h1 class="h-sm" style="margin:0px; margin-top: 0px; font-size: 36px; line-height: 38px; color: #F36D00; font-weight: 900;"><a name="section1"></a>Discussing Black maternal health solutions on Capitol&nbsp;Hill</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <!--[if !mso 9]><!-->
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td align="left" width="180" class="hide-desktop" style="display: none;mso-line-height-alt:90%;mso-line-height-rule:exactly;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/3da352fe-2426-4739-b85f-5aab136256aa.png" alt="A Black mother holding her newborn baby" width="180" style="width:180px;max-width:180px;height:auto;margin:0;display:block;border:0;outline:none;mso-line-height-alt:100%;mso-line-height-rule:exactly;"> </td>
+                                                </tr>
+                                            </table>
+                                            <!--<![endif]-->
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td align="left" valign="middle" width="180" class="hide-mobile" style="mso-line-height-alt:120%;mso-line-height-rule:exactly;vertical-align: middle;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/3da352fe-2426-4739-b85f-5aab136256aa.png" alt="A Black mother holding her newborn baby" width="180" style="width:180px;max-width:180px;height:auto;margin:0;display:inline-block;border:0;outline:none;mso-line-height-alt:100%;mso-line-height-rule:exactly;"> </td>
+                                                    <td class="pd-center-padding-small pt-2" align="left" style="padding-left:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p style="margin: 0px;">Black women, no matter their education level or income bracket, are three times more likely to face life-threatening pregnancy complications than White women. On Apr&#8205;il&nbsp;2&#8205;9, Cristal Gary, Meridian Plan President and CEO, participated in a panel discussion during the <a href="https://nmqf.org/annual-summits/2024-annual-leadership-summit/" target="_blank" style="color: #414042;text-decoration: underline;">2024 Annual NMQF Leadership Summit</a> in Washington, D.C. Alongside fellow experts, she addressed the Black maternal health crisis and approaches to affect change and scale solutions for health&nbsp;equity.</p>
+                                                        <p style="margin:0px;margin-top:24px;"><a href="https://www.youtube.com/watch?v=jJfcqb9CMyE&t=8223s" target="_blank"><img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/4108f8b1-4dff-4a31-96ec-43d89747bb82.png" width="223" border="0" alt="Watch the panel discussion" style="width: 223px; max-width: 223px; height:auto; display: inline-block; margin:0; padding:0;mso-line-height-alt:100%;mso-line-height-rule:exactly;"></a></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section2"></a>Help us move the needle on maternal health&nbsp;outcomes</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Did you know that members who complete a <a href="https://www.ilmeridian.com/members/medicaid/resources/handbooks-forms.html#pregnancy?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_nop" target="_blank" style="color:#414042;text-decoration:underline;">Notification of Pregnancy (NOP)</a> are three times more likely to be compliant with prenatal care? And they can earn up to $250 and free baby gear through our expanded <a href="https://www.ilmeridian.com/members/medicaid/benefits-services/healthy-rewards.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_healthy_rewards" target="_blank" style="color:#414042;text-decoration:underline;">Healthy Rewards&nbsp;program</a>.</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Encourage patients to submit their NOP early via the member portal, <b style="font-weight: 900;">or you can complete it on their behalf through the <a href="https://ilmeridian.entrykeyid.com/as/authorization.oauth2?response_type=code&client_id=d8de5c89-1d5d-4c59-b3ed-e99e09b18048&scope=openid%20profile&state=syM75vm6J5e2Rtk3SCbY8H1F2huAwcvnj7b9mXiawGQ%3D&redirect_uri=https://provider.ilmeridian.com/careconnect/login/oauth2/code/pingcloud&code_challenge_method=S256&nonce=cTrnbHPYqQmoDIDnNFXhpoQFufRpTyPiYC94zpY5Z5k&code_challenge=x0s_Eo3f7hjSt3pBQER7Mnp9YkMFmOEY3TjitAFRJ94&app_origin=https://provider.ilmeridian.com/careconnect/login/oauth2/code/pingcloud&brand=ilmeridian&utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_provider_portal" target="_blank" style="color:#414042;text-decoration:underline;">secure provider portal</a></b>. A completed NOP will connect your patients to Meridian’s care management team and high-risk members to <a href="https://www.ilmeridian.com/members/start-smart-for-your-baby.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_ssfb" target="_blank" style="color:#414042;text-decoration:underline;">Start Smart for Your Baby<sup style="line-height:100%;">®</sup></a> — our multi-faceted program that includes enhanced outreach, wellness materials, intensive care management, and provider collaboration to lower the risks of premature births and admissions to neonatal intensive care&nbsp;units.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <!--[if mso]> <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" style="height:310px;v-text-anchor:middle;width:568px;" arcsize="10%" strokecolor="#FFD200" strokeweight="2px" fillcolor="none"> <w:anchorlock/> <center> <![endif]-->
+                                            <div style="border:2px solid #FFD200;border-radius:16px;">
+                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td style="padding:24px;">
+                                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                                <tr>
+                                                                    <td class="pd-center-padding-small" align="left" style="padding-left:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                        <p style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section3"></a>New 20&#8205;24 P4P incentive: Capturing new and expectant moms’ health&#8209;related social&nbsp;needs</p>
+                                                                        <p style="margin: 0px;margin-top: 16px;">We’re proud to unveil a new P4P incentive that rewards providers an extra $10 for including Z Codes on claims for prenatal and postpartum visits. <a href="https://www.cms.gov/files/document/zcodes-infographic.pdf" target="_blank" style="color:#414042;text-decoration:underline;">Learn more</a> about Z Codes, which capture patients’ social conditions such as education, housing, employment, and food access. By systematically documenting Z Code information, together we can develop interventions that take a whole-person approach to&nbsp;healthcare.</p>
+                                                                        <p style="margin:0px;margin-top: 24px;text-align:left;padding-right:0px;white-space: nowrap;"><a href="https://www.ilmeridian.com/providers/resources/quality-improvement/the-2024-pay-for-performance-program.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_p4p_page" target="_blank" style="color:#414042;text-decoration: underline;"><b style="text-decoration: underline;font-weight:900;white-space: nowrap;">20&#8205;24 P4P Incentives</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <!--[if mso]> </center> </v:roundrect> <![endif]-->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section4"></a>Celebrate Women’s Health Month as a champion for cancer&nbsp;screening</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Routine screening to detect breast and cervical cancers at their earliest, most treatable stages saves&nbsp;lives.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-top:24px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:100%;">
+                                                            <tr>
+                                                                <td class="pd-center-padding-small" align="left" style="padding-left:6px;padding-right:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">Meridian members can earn $100 for breast cancer screening and $50 for cervical cancer screening through our <a href="https://www.ilmeridian.com/members/medicaid/benefits-services/healthy-rewards.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_healthy_rewards" target="_blank" style="color:#414042;text-decoration:underline;">Healthy Rewards</a>&nbsp;program.</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">Providers can earn incentives for delivering these preventive services through our enhanced <a href="https://www.ilmeridian.com/content/dam/centene/meridian/il/pdf/2024%20Meridian%20Medicaid%20Provider%20P4P%20FINAL.pdf?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_p4p_pdf" target="_blank" style="color:#414042;text-decoration:underline;">20&#8205;24 P4P&nbsp;program</a>.</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;padding-bottom:0px;">•</td>
+                                                                            <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;padding-bottom:0px;">Promote breast cancer screening by sharing our <i>Fast Facts for Better Health</i> video with your patients and&nbsp;networks.</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-top:24px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p style="margin:0px;text-align:left;padding-right:0px;white-space: nowrap;"><a href="https://www.ilmeridian.com/members/medicaid/resources/video-library.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_video_library" target="_blank" style="color:#414042;text-decoration: underline;"><b style="text-decoration: underline;font-weight:900;white-space: nowrap;">Video: The Importance of Getting Your Mammogram</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section5"></a>Long COVID and&nbsp;depression</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Studies emerging about Long COVID offer providers valuable insights, such as findings that depression is the most prominent symptom associated with the condition. Our recent provider notice outlines the risk factors for developing Long COVID, the most common symptoms, and guidance for treating mental health conditions associated with it, including the antidepressant medications on the <a href="https://www.ilmeridian.com/providers/pharmacy.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_pharmacy" target="_blank" style="color:#414042;text-decoration:underline;">Meridian Preferred Drug&nbsp;List</a>.</p>
+                                                        <p style="margin:0px;margin-top: 24px;text-align:left;padding-right:0px;white-space: nowrap;"><a href="https://www.ilmeridian.com/newsroom/long-covid-and-depression.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_long_covid" target="_blank" style="color:#414042;text-decoration: underline;"><b style="text-decoration: underline;font-weight:900;white-space: nowrap;">Long COVID Resources</b></a>&nbsp;<img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/577e16f3-cfa0-4152-bcb3-52003fc27bc4.png" alt="Icon of an arrow" width="9" height="9" style="width:9px;max-width:9px;height:9px;display:inline-block;border:none;"></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section6"></a>Women’s health Quality Improvement webinars</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Our Quality Improvement team’s May webinars focus on women’s health, breast cancer screening, cervical cancer screening, and chlamydia screening in women. To attend, contact the Quality Practice Advisor (QPA) or associate QPA assigned to your practice, or email <a href="mailto:ILHEDISOps@mhplan.com" target="_blank" style="color:#414042;text-decoration:underline;">IL&#8205;HEDIS&#8205;Op&#8205;s@m&#8205;hplan.&#8205;com</a>. And learn more about preventative measures in the <a href="https://www.ilmeridian.com/providers/resources/quality-improvement.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_hedis_p4p" target="_blank" style="color:#414042;text-decoration:underline;">20&#8205;24 HEDIS Quick Reference Guide</a> for Meridian and our family of&nbsp;plans.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section7"></a>Updated YouthCare Provider Manual&nbsp;released</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">YouthCare Health<i>Choice</i> Illinois has released an updated Provider Manual, a reference tool designed to assist you and your staff in understanding plan policies, procedures, and other protocols for YouthCare. Find the manual any time on YouthCare’s <a href="https://www.ilyouthcare.com/providers/provider-resources/forms-resources.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_yc_manual" target="_blank" style="color:#414042;text-decoration:underline;">website</a> under Manuals, Forms, and Resources. For claims and billing information, please reference the <a href="https://www.iamhp.org/providers" target="_blank" style="color:#414042;text-decoration:underline;">IAMHP Comprehensive Billing Guide</a>. Examples of changes to the manual&nbsp;include:</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                            <tr>
+                                                                <td style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:100%;">
+                                                                        <tr>
+                                                                            <td class="pd-center-padding-small" align="left" style="padding-left:6px;padding-right:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">Updated information relating to the pharmacy benefit manager</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">How to report significant events</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;">Timely filing guidelines</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section8"></a>YouthCare pharmacy update: Psychotropic medications</p>
+                                                        <p style="margin: 0px;margin-top: 16px;"><b style="font-weight:900;">Effective Jun&#8205;e&nbsp;1, 20&#8205;24</b>, the status of the medications buprenorphine, buprenorphine-naloxone, methadone, naltrexone, and naltrexone-triamcinolone will change for YouthCare members under the care of the Department of Children and Family Services (DCFS). The drugs will require the form <a href="https://dcfs.illinois.gov/content/dam/soi/en/web/dcfs/documents/about-us/policy-rules-and-forms/documents/cfs-400/cfs431a.pdf" target="_blank" style="color:#414042;text-decoration:underline;">CFS 431-A</a> (also known as a consent form) to be submitted to&nbsp;DCFS.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section9"></a>Fee schedule updates, rate changes, & billing updates</p>
+                                                        <p style="margin: 0px;margin-top: 16px;">Claims payment updates and known issues are posted on our <a href="https://www.ilmeridian.com/providers/known-issues.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_claims_alerts" target="_blank" style="color:#414042;text-decoration:underline;">website</a>. Claims should not be resubmitted. If you have questions about billing, contact your assigned Provider Relations representative. If your practice doesn’t have an assigned representative please, complete our <a href="https://app.smartsheet.com/b/form/2ca9d6cae31846638a2ab1daf3a8c763" target="_blank" style="color:#414042;text-decoration:underline;">intake&nbsp;form</a>.</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:24px;padding-bottom:50px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                            <tr>
+                                                                <td style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:100%;">
+                                                                        <tr>
+                                                                            <td class="pd-center-padding-small" align="left" style="padding-left:6px;padding-right:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;"><a href="https://hfs.illinois.gov/medicalproviders/notices/notice.prn240402a.html" target="_blank" style="color:#414042;text-decoration:underline;">Planned rate adjustments for practitioner services</a> went into effect on Ap&#8205;ril&nbsp;2,&nbsp;202&#8205;4.</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p class="h-sm" style="margin:0px; font-size: 24px; line-height: 24px; color: #F36D00; font-weight: 900;"><a name="section10"></a>In case you missed&nbsp;it</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:24px;padding-bottom:24px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                                            <tr>
+                                                                <td style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                    <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;width:100%;">
+                                                                        <tr>
+                                                                            <td class="pd-center-padding-small" align="left" style="padding-left:6px;padding-right:16px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">YouthCare members previously denied orthodontic services may qualify for the oral healthcare they need through a <a href="https://www.ilyouthcare.com/members/youthcare/benefits-services/dental-care/orthodontics.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_yc_orthodontics" target="_blank" style="color:#414042;text-decoration:underline;">new grant opportunity</a>.</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;text-align: left;padding-bottom:8px;padding-left:4px;">May is Mental Health Awareness Month, the perfect time to <a href="https://attendee.gototraining.com/9x11d/catalog/2673486049625274880?tz=America/Chicago" target="_blank" style="color:#414042;text-decoration:underline;">sign up for a live, instructor-led behavioral health training session</a> offered by our parent company Centene.</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td width="10" valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:0px;">•</td>
+                                                                                        <td valign="top" style="background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:125%;mso-line-height-rule:exactly;text-align: left;padding-left:4px;"><a href="https://www.ilmeridian.com/members/medicaid/resources/video-library.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_video_library" target="_blank" style="color:#414042;text-decoration:underline;">Visit our video library</a> for member-friendly videos on important topics such as childhood immunizations, colorectal cancer screening, and sexually transmitted infections.</td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="left" style="padding-bottom:50px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 18px; font-weight: 300; color: #414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                                        <p style="margin: 0px;">Follow <a href="https://www.linkedin.com/company/meridian-of-illinois/" target="_blank" style="color:#414042;text-decoration:underline;">Meridian</a> and <a href="https://www.linkedin.com/company/il-youthcare/" target="_blank" style="color:#414042;text-decoration:underline;">YouthCare</a> on LinkedIn!</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td class="pd-center-padding" style="background-color: #ffffff;padding-top:24px;padding-bottom:16px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="float:left;">
+                                                <tr>
+                                                    <td class="pd-center-padding-small" align="center" style="padding-right:0px;">
+                                                        <p style="margin:0px; font-size: 18px; line-height: 21px; color: #414042; font-weight: 300;text-align: center;">Meridian and our family of plans connect communities across the state to the <span style="white-space: nowrap;">whole&#8209;health</span> care they need, right where they&nbsp;are.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="mso-line-height-rule:exactly;background-color: #ffffff;padding-top:0px;padding-bottom:0px;padding-left:0px;padding-right:0px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff">
+                                    <tr>
+                                        <td align="center" class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:24px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;mso-line-height-alt:120%;mso-line-height-rule:exactly;"> <!--[if mso]> <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="572"> <tr> <td valign="top" align="center"> <![endif]--> <a href="https://www.ilmeridian.com/providers.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_brand_family" target="_blank"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/41cb5efa-ae80-4c69-a890-1324e91faf96.png" width="150" height="34" border="0" alt="Meridian logo" style="width: 150px; max-width: 150px; height:auto; display: inline-block; margin:0; padding:0;mso-line-height-alt:100%;mso-line-height-rule:exactly;">&nbsp;&nbsp; </a> <!--[if mso]> </td> <td valign="top" align="center"> <![endif]--> <a href="https://www.ambetterofillinois.com/provider-resources.html" target="_blank"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/f8b6ca3c-056c-4029-a5c3-a59b9b72d8a2.png" width="138" height="34" border="0" alt="Ambetter logo" style="width: 138px; max-width: 138px; height:auto; display: inline-block; margin:0; padding:0;mso-line-height-alt:100%;mso-line-height-rule:exactly;">&nbsp;&nbsp; </a> <!--[if mso]> </td> <td valign="top" align="center"> <![endif]--> <a href="https://www.wellcare.com/en/illinois/providers" target="_blank"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/28f2dcb0-3a1c-4c5f-bef8-ef309db267ae.png" width="108" height="34" border="0" alt="Wellcare logo" style="width: 108px; max-width: 108px; height:auto; display: inline-block; margin:0; padding:0;mso-line-height-alt:100%;mso-line-height-rule:exactly;">&nbsp;&nbsp; </a> <!--[if mso]> </td> <td valign="top" align="center"> <![endif]--> <a href="https://www.ilyouthcare.com/providers.html?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_brand_family" target="_blank"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/310a8be8-27c2-4129-844e-f5e704dbf793.png" width="128" height="34" border="0" alt="YouthCare logo" style="width: 128px; max-width: 128px; height:auto; display: inline-block; margin:0; padding:0;mso-line-height-alt:100%;mso-line-height-rule:exactly;"> </a> <!--[if mso]> </td> </tr> </table> <![endif]--> </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:0px;padding-bottom:50px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #f0f0f0;padding-top:35px;padding-bottom:35px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;">
+                                <p style="margin:0px;margin-top:0px;">Meridian complies with applicable Federal civil rights laws and does not discriminate on the basis of race, color, national origin, age, disability, or&nbsp;sex.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:30px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;"> <!--[if mso]> <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="572"> <tr> <td valign="top" width="340"> <![endif]-->
+                                <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="340" style="float:left;width:340px;">
+                                    <tr>
+                                        <td align="left" style="padding-top:0px;background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                                                <tr>
+                                                    <td class="pb-0" align="left" style="padding-bottom:15px;mso-line-height-alt:120%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                                        <h2 style="margin:0px;margin-bottom:10px; font-size: 19px; line-height: 21px; color: #F36D00; font-weight: 900;">Contact us</h2>
+                                                        <p style="margin:0px;"><b style="font-weight:900;">Meridian Provider Services</b></p>
+                                                        <p style="margin:0px;"><a href="mailto:ILProviderRelations@mhplan.com" target="_blank" style="color:#414042;text-decoration: underline;"><span>ILProviderRelations@mhplan.com</span></a></p>
+                                                        <p style="margin:0px;"><a href="tel:866-606-3700" target="_blank" style="text-decoration: underline;color:#414042;white-space: nowrap;"><span>8&zwj;66&#8209;60&zwj;6&#8209;3&zwj;70&zwj;0</span></a></p>
+                                                        <p style="margin:0px;">(TTY: <a href="tel:711" target="_blank" style="white-space:nowrap;color:#414042;text-decoration:underline;"><span style="white-space:nowrap;color:#414042;">711</span></a>)</p>
+                                                        <p style="margin:0px">Mo&zwj;nd&zwj;ay–Fri&zwj;day, 8:0&zwj;0 a&zwj;.m. to 5&zwj;:0&zwj;0 p&zwj;.m.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> <td valign="top" width="232"> <![endif]-->
+                                <table class="stack-column" role="presentation" border="0" cellpadding="0" cellspacing="0" width="232" style="float:left;width:232px;">
+                                    <tr>
+                                        <td class="pt-2" style="padding-top:0px;background-color: #ffffff;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" style="width:100%;">
+                                                <tr>
+                                                    <td style="mso-line-height-alt:120%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                            <tr>
+                                                                <td class="stack-column-center" align="right" style="padding-bottom:7px;mso-line-height-alt:120%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                                                    <p style="margin:0px;"><a href="https://www.ilmeridian.com/?utm_source=salesforce&utm_medium=email&utm_campaign=provider_engagement&utm_term=provider&utm_content=sage_checkin_footer" target="_blank" style="color: #414042; text-decoration: underline;"><b style="color: #414042; text-decoration: underline;">ILmeridian.com</b></a></p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="stack-column-center pb-1" align="right" style="padding-bottom:10px;mso-line-height-alt:120%;mso-line-height-rule:exactly;"> <a href="https://www.linkedin.com/company/meridian-of-illinois/" target="_blank"><img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/4095aea4-0e40-4528-a822-127e629e69ef.png" width="25" height="25" border="0" alt="LinkedIn icon" style="width: 25px; max-width: 25px; height: 25px; background: #FFFFFF; font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 13px; line-height: 20px; font-weight: 300; color: #414042; margin: 0;" class="logo-center-on-narrow"></a> </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> </tr> </table> <![endif]-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding" style="background-color: #ffffff;padding-top:20px;padding-bottom:0px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 4px; line-height: 4px; font-weight: 300;color:#414042;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="hide-mobile" style="font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/56789d98-62b7-4316-bb31-d1cdb47e729e.png" alt="Section break" width="572" style="width:572px;height:2px;"> </td> <!--[if !mso 9]><!-->
+                                        <td class="hide-desktop" style="display: none;mso-hide:all;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif; font-size: 4px; line-height: 4px; color: #414042;"> <img src="https://image.info.ilmeridian.com/lib/fe4a15707564057c741471/m/1/bd3fa891-95e4-4a6d-8bc3-d285029e1dc7.png" alt="Section break" width="100%" style="mso-hide:all;"> </td> <!--<![endif]-->
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pd-center-padding pt-2" style="background-color: #ffffff;padding-top:20px;padding-bottom:30px;padding-left:54px;padding-right:54px;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300;color:#414042;"> <!--[if mso]> <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="572"> <tr> <td valign="top" width="362"> <![endif]-->
+                                <table class="stack-column" align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" width="362" style="width:362px;float:left;">
+                                    <tr>
+                                        <td align="left" style="margin:0;text-align:left;mso-line-height-alt:100%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                            <p style="margin:0px;margin-top:0px;"><a style="color: #414042;text-decoration:none;"><span>13&#8205;33 Burr Ridge Parkway, Suite 50&#8205;0, Burr&nbsp;Ridge,&nbsp;IL&nbsp;60&#8205;527</span></a></p>
+                                            <p style="margin:0px;margin-top:0px;">&copy;20&zwj;24 Meridian. All Rights Reserved.</p>
+                                        </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> <td valign="top" width="210"> <![endif]-->
+                                <table class="stack-column" align="left" role="presentation" border="0" cellpadding="0" cellspacing="0" width="210" style="width:210px;float:left;background-color: #ffffff;">
+                                    <tr>
+                                        <td valign="top" class="pt-1" align="left" style="margin:0;text-align:right;mso-line-height-alt:100%;mso-line-height-rule:exactly;font-family:museo-sans,Calibri,system-ui,Candara,Segoe,Segoe UI,Arial,sans-serif;font-size: 13px; line-height: 20px; font-weight: 300; color: #414042;">
+                                            <p style="margin:0px;mso-line-height-alt:100%;mso-line-height-rule:exactly;"> <a href="https://www.ilmeridian.com/privacy-policy.html?utm_source=salesforce&utm_medium=email&utm_campaign=branding&utm_term=provider&utm_content=checkin_footer" target="_blank" style="color:#414042;text-decoration: underline;"><span>Privacy Policy</span></a>&nbsp;&nbsp;<a href="https://cloud.info.ilmeridian.com/provider-unsubscribe" target="_blank" style="color:#414042;text-decoration: underline;"><span>Unsubscribe</span></a> </p>
+                                        </td>
+                                    </tr>
+                                </table> <!--[if mso]> </td> </tr> </table> <![endif]-->
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- End Content -->
+                </td>
+            </tr>
+        </table>
+        <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+    </div>
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+    <div style="margin:0;display:none;max-height:0;font-size:0;line-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+        <custom name="opencounter" type="tracking" />
+    </div>
+</body>
+
+</html>
